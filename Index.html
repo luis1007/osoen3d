@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Modelo 3D</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+                  <img id="Sky" crossorigin src="https://i.postimg.cc/RZFkPM7N/des.jpg">
+                  <a-asset-item id="oso-obj" src="/oso/oso.obj"></a-asset-item>
+                  <a-asset-item id="oso-mtl" src="/oso/oso.mtl"></a-asset-item>
+
+
+     </a-assets>
+
+              <a-sky src="#Sky"></a-sky>
+
+
+      <a-entity obj-model="obj: #oso-obj; mtl: #oso-mtl;" position="0 1 -2"></a-entity>
+
+<a-camera></a-camera>
+
+    </a-scene>
+  </body>
+</html>
